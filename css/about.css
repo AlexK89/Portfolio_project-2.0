@@ -282,9 +282,9 @@ nav ul a:focus{
 }
 /*fotter_section*/
 footer {
-	background: #000;
+	background: #fff;
 	padding: 10px 0;
-	color: #fff;
+	color: #919294;
 	text-align: center;
 	letter-spacing: 1px;
 	font-weight: 100;

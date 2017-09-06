@@ -147,7 +147,7 @@ nav ul a:focus{
 /*Header*/
 .header {
 	position: relative;
-	height: 100vh;
+	height: 500px;
 }
 .header_background {
 	position: fixed;
@@ -160,7 +160,7 @@ nav ul a:focus{
 }
 .header_content {
 	color: #fff;
-	padding-top: 15%;
+	padding-top: 150px;
 }
 
 .header_content h1 {
@@ -170,7 +170,6 @@ nav ul a:focus{
 /*principles_section*/
 .principles {
 	padding-top: 30px;
-/*	padding-bottom: 70px;*/
 	background-color: #fff;
 	overflow: auto;
 }
@@ -249,9 +248,9 @@ nav ul a:focus{
 }
 /*fotter_section*/
 footer {
-	background: #000;
+	background: #fff;
 	padding: 10px 0;
-	color: #fff;
+	color: #919294;
 	text-align: center;
 	letter-spacing: 1px;
 	font-weight: 100;
