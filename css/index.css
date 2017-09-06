@@ -280,18 +280,15 @@ nav ul a:focus{
 /*statistics_section*/
 .statistics {
 	position: relative;
-/*	background: url('../img/desktop-2325627_1920.jpg') no-repeat center center;
-	background-position: center center;
-	background-size: cover;*/
 	color: #fff;
 	overflow: hidden;
 }
 .statistics_background {
 	position: absolute;
 	z-index: -5;
-	margin-top: 320px;
+	margin-top: 160px;
 	width: 100vw;
-	height: 170%;
+	height: 130%;
 	background: url('../img/desktop-2325627_1920.jpg') no-repeat center center;
 	background-size: cover;
 }
@@ -449,6 +446,11 @@ footer {
 	.container {
 		width: 100%;
 	}
+	.statistics_background {
+		height: 150%;
+		background: url('../img/desktop-2325627_1920.jpg') no-repeat left center;
+		background-size: cover;
+	}
 }
 @media screen and (max-width: 1132px) and (orientation: landscape) {
 	.header_content {
@@ -507,7 +509,6 @@ footer {
 	.principles_row_description {
 		padding: 30px 50px;
 	}
-	
 	.statistics_left,
 	.statistics_right {
 	    position: relative;

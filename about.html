@@ -112,6 +112,7 @@
 	<footer>
 		<p>&copy; Copyright by Vasile Cojusco.</p>
 	</footer>
+	<script src="./js/jquery-3.2.1.min.js" charset="utf-8"></script>
 	<script type="text/javascript">
 	    function toggle_menu() {
 			if(document.getElementById("menu").style.top == "0px") {
@@ -127,6 +128,13 @@
 				document.getElementById("menu").style.top = "-455px";
 				document.getElementsByClassName("toggle_ancher")[0].style.color = "#fff"; 
 		}, false);
+		$(window).scroll(function(e){
+		  parallax();
+		});
+		function parallax(){
+		  var scrolled = $(window).scrollTop();
+		  $('.header_background').css('top',-(scrolled*0.3)+'px');
+		}
 	</script>
 </body>
 </html>

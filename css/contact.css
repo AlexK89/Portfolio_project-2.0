@@ -164,7 +164,7 @@ nav ul a:focus{
 	z-index: -10;
 	top: 0;
 	width: 100vw;
-	height: 100vh;
+	height: 110vh;
 	background: url(../img/laptop-2588074_1920.jpg) no-repeat center center;
 	background-size: cover;
 }
