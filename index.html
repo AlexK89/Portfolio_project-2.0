@@ -91,6 +91,7 @@
 		</div>
 	</section>
 	<section class="statistics">
+		<div class="statistics_background"></div>
 		<div class="filter"></div>
 		<div class="container">
 			<div class="statistics_left">
@@ -161,22 +162,30 @@
 			}
 		}
 		document.addEventListener('touchend', function(event) {
-				document.getElementById("menu").style.top = "-455px";
-				document.getElementsByClassName("toggle_ancher")[0].style.color = "#fff";
-		    
+			document.getElementById("menu").style.top = "-455px";
+			document.getElementsByClassName("toggle_ancher")[0].style.color = "#fff";
+			
 		}, false);
 		$('#smooth_scroll[href^="#"]').on('click',function (e) {
-			    e.preventDefault();
+		    e.preventDefault();
     	
-			    var target = this.hash;
-			    var $target = $(target);
+		    var target = this.hash;
+		    var $target = $(target);
     	
-			    $('html, body').stop().animate({
-			        'scrollTop': $target.offset().top
-			    }, 900, 'swing', function () {
-			        window.location.hash = target;
-			    });
-			});
+		    $('html, body').stop().animate({
+		        'scrollTop': $target.offset().top
+		    }, 900, 'swing', function () {
+		        window.location.hash = target;
+		    });
+		});
+		$(window).scroll(function(e){
+		  parallax();
+		});
+		function parallax(){
+		  var scrolled = $(window).scrollTop();
+		  $('.header_background').css('top',-(scrolled*0.3)+'px');
+		  $('.statistics_background').css('top',-(scrolled*0.2)+'px');
+		}
 	</script>
 </body>
 </html>

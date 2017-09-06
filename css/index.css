@@ -160,7 +160,7 @@ nav ul a:focus{
 	z-index: -10;
 	top: 0;
 	width: 100vw;
-	height: 100vh;
+	height: 110vh;
 	background: url(../img/laptop-2588074_1920.jpg) no-repeat center center;
 	background-size: cover;
 }
@@ -280,11 +280,20 @@ nav ul a:focus{
 /*statistics_section*/
 .statistics {
 	position: relative;
-	background: url('../img/desktop-2325627_1920.jpg') no-repeat center center;
+/*	background: url('../img/desktop-2325627_1920.jpg') no-repeat center center;
 	background-position: center center;
-	background-size: cover;
+	background-size: cover;*/
 	color: #fff;
-	overflow: auto;
+	overflow: hidden;
+}
+.statistics_background {
+	position: absolute;
+	z-index: -5;
+	margin-top: 320px;
+	width: 100vw;
+	height: 170%;
+	background: url('../img/desktop-2325627_1920.jpg') no-repeat center center;
+	background-size: cover;
 }
 .filter {
 	position: absolute;
