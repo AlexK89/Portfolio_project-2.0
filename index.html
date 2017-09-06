@@ -30,7 +30,7 @@
 			<div class="header_text">
 				<h4>I am here because of you ...<h4>
 				<h1>Software engineer is here to help</h1>
-				<a class="button" href="#info_scroll">More details</a>
+				<a class="button" id="smooth_scroll" href="#info_scroll">More details</a>
 			</div>
 			<!-- <div class="flex header_items">
 				<div class="header_iam">
@@ -149,29 +149,29 @@
 	
 	
 	<script src="./js/jquery-3.2.1.min.js" charset="utf-8"></script>
-	    <script type="text/javascript">
-	        function toggle_menu() {
-				if(document.getElementById("menu").style.top == "0px") {
-					document.getElementById("menu").style.top = "-455px";
-					document.getElementsByClassName("toggle_ancher")[0].style.color = "#fff";
-				} 
-				else {
-					document.getElementById("menu").style.top = "0";
-					document.getElementsByClassName("toggle_ancher")[0].style.color = "#919294";
-				}
-	        }
-			$('a[href^="#"]').on('click',function (e) {
-				    e.preventDefault();
+	<script type="text/javascript">
+	    function toggle_menu() {
+			if(document.getElementById("menu").style.top == "0px") {
+				document.getElementById("menu").style.top = "-455px";
+				document.getElementsByClassName("toggle_ancher")[0].style.color = "#fff";
+			} 
+			else {
+				document.getElementById("menu").style.top = "0";
+				document.getElementsByClassName("toggle_ancher")[0].style.color = "#919294";
+			}
+	    }
+		$('#smooth_scroll[href^="#"]').on('click',function (e) {
+			    e.preventDefault();
 
-				    var target = this.hash;
-				    var $target = $(target);
+			    var target = this.hash;
+			    var $target = $(target);
 
-				    $('html, body').stop().animate({
-				        'scrollTop': $target.offset().top
-				    }, 900, 'swing', function () {
-				        window.location.hash = target;
-				    });
-				});
-	    </script>
+			    $('html, body').stop().animate({
+			        'scrollTop': $target.offset().top
+			    }, 900, 'swing', function () {
+			        window.location.hash = target;
+			    });
+			});
+	</script>
 </body>
 </html>

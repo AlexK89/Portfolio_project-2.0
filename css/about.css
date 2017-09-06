@@ -152,7 +152,6 @@ nav ul a:focus{
 	color: #00BC8B;
 	border-bottom: 1px solid #00BC8B;
 }
-
 /*Header*/
 .header {
 	position: relative;
@@ -169,7 +168,7 @@ nav ul a:focus{
 }
 .header_content {
 	color: #fff;
-	padding-top: 250px;
+	padding: 300px 70px 0;
 }
 
 .header_content h1 {
@@ -325,7 +324,7 @@ footer {
 		padding-bottom: 30px;
 	}
 	.header_content {
-		padding-top: 300px;
+		padding-top: 350px;
 	}
 	.header_text {
 		text-align: left;
@@ -350,6 +349,9 @@ footer {
 	}
 	h2 {
 		font-size: 2.1rem;
+	}
+	nav li {
+		height: 60px;
 	}
 	.header_items {
 		display: none;
@@ -377,7 +379,7 @@ footer {
 		transition: .4s;
 		background: #fff;
 		padding: 30px;
-		padding-top: 120px;
+		padding-top: 50px;
 	}
 	#menu li {
 		display: block;
@@ -386,7 +388,7 @@ footer {
 	}
 	nav li a {
 		color: #919294;
-		padding: 20px;
+		padding: 10px;
 		display: block;
 		transition: .4s;
 		outline: 1px solid transparent;

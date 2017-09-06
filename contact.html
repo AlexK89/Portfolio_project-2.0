@@ -50,5 +50,18 @@
 	<footer>
 		<p>&copy; Copyright by Vasile Cojusco.</p>
 	</footer>
+	<script src="./js/jquery-3.2.1.min.js" charset="utf-8"></script>
+	<script type="text/javascript">
+	    function toggle_menu() {
+			if(document.getElementById("menu").style.top == "0px") {
+				document.getElementById("menu").style.top = "-455px";
+				document.getElementsByClassName("toggle_ancher")[0].style.color = "#fff";
+			} 
+			else {
+				document.getElementById("menu").style.top = "0";
+				document.getElementsByClassName("toggle_ancher")[0].style.color = "#919294";
+			}
+	    }
+	</script>
 </body>
 </html>

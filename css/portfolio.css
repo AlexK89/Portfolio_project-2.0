@@ -39,7 +39,6 @@ p {
 	font-size: 1.8rem;
 }
 .button {
-	margin-top: 30px;
 	padding: 20px 30px;
 	border: 3px solid #00BC8B;
 	border-radius: 5px;
@@ -65,6 +64,16 @@ p {
 }
 
 /*header section*/
+.toggle {
+	display: none;
+	position: absolute;
+	z-index: 20;
+	top: 25px;
+	right: 40px;
+}
+.toggle a {
+	color: #fff;
+}
 nav {
 	width: 100%;
 	height: 90px;
@@ -72,7 +81,8 @@ nav {
 	top: 0;
 	z-index: 10;
 	background: #000;
-	background: -webkit-linear-gradient(rgba(0,0,0,.8), 				rgba(0,0,0,0));
+	background: -webkit-linear-gradient(rgba(0,0,0,.8),
+				rgba(0,0,0,0));
 	background: -o-linear-gradient(rgba(0,0,0,.8),
 				rgba(0,0,0,0));
 	background: -moz-linear-gradient(rgba(0,0,0,.8),
@@ -80,9 +90,6 @@ nav {
 	background: linear-gradient(rgba(0,0,0,.8),
 				rgba(0,0,0,0));
 }
-/*nav .container {
-	background-color: rgba(0,0,0,0);
-}*/
 .logo {
 	position: absolute;
 	z-index: 2;
@@ -113,6 +120,7 @@ nav {
 }
 nav ul {
 	margin: 0px;
+	padding: 0;
 	text-align: center;
 }
 nav li {
@@ -147,7 +155,7 @@ nav ul a:focus{
 /*Header*/
 .header {
 	position: relative;
-	height: 500px;
+	height: 100vh;
 }
 .header_background {
 	position: fixed;
@@ -160,7 +168,7 @@ nav ul a:focus{
 }
 .header_content {
 	color: #fff;
-	padding-top: 150px;
+	padding: 300px 70px 0;
 }
 
 .header_content h1 {
@@ -169,36 +177,36 @@ nav ul a:focus{
 
 /*principles_section*/
 .principles {
-	padding-top: 30px;
 	background-color: #fff;
 	overflow: auto;
 }
 .principles_row {
-	min-height: 500px;
-	overflow: auto;
+	height: 500px;
+	overflow: hidden;
 }
 
 .principles_row_block {
-	transition: .4s;
 	overflow: hidden;
+	transition: .4s;
+}
+.principles_row .principles_row_block,
+.principles_row .principles_row_description
+ {
+	width: 50%;
+	height: 100%;
 }
 .principles_row:nth-child(odd) .principles_row_block,
-.principles_row:nth-child(odd) .principles_row_description
- {
-	width: 50%;
-	float: left;
-	min-height: 500px;
-}
-.principles_row:nth-child(even) .principles_row_block,
-.principles_row:nth-child(even) .principles_row_description
- {
-	width: 50%;
+.principles_row:nth-child(even) .principles_row_description {
 	float: right;
-	min-height: 500px;
+}
+.principles_row:nth-child(odd) .principles_row_description,
+.principles_row:nth-child(even) .principles_row_block
+ {
+	float: left;
 }
 .principles_row_img {
 	width: 100%;
-	min-height: 500px;
+	height: 100%;
 	background: url('../img/perfection.jpg') no-repeat center center;
 	background-size: cover;
 	transition: .4s;
@@ -254,4 +262,158 @@ footer {
 	text-align: center;
 	letter-spacing: 1px;
 	font-weight: 100;
+}
+
+/*Mediaqueries*/
+
+@media screen and (max-width: 1132px) {
+	h1 {
+		font-size: 4rem;
+	}
+	h2 {
+		font-size: 3rem;
+	}
+	h4 {
+		font-size: 1.6rem;
+		font-style: italic;
+	}
+	p {
+		font-size: 1.6rem;
+	}
+	.header {
+		height: auto;
+		min-height: 100vh;
+	}
+	.header_content {
+		text-align: center;
+		padding: 400px 10px 0;
+	}
+	.header_items {
+		width: 100%;
+		justify-content: space-around;
+	}
+	.container {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 1132px) and (orientation: landscape) {
+	.header_content {
+		padding-top: 250px;
+	}
+}
+@media screen and (max-width: 879px) {
+	h1 {
+		font-size: 3rem;
+	}
+	h2 {
+		font-size: 2.1rem;
+	}
+	nav li {
+		height: 60px;
+	}
+	.header_text {
+		padding: 0 20px;
+	}
+	.header_items {
+		display: none;
+	}
+	.header_content {
+		padding-top: 300px;
+	}
+	.info {
+		padding: 150px 20px;
+	}
+	.principles_row {
+		height: 700px;
+	}
+	.principles_row:nth-child(odd) .principles_row_block,
+	.principles_row:nth-child(odd) .principles_row_description,
+	.principles_row:nth-child(even) .principles_row_block,
+	.principles_row:nth-child(even) .principles_row_description
+	 {
+		width: 100%;
+		height: 350px;
+	}
+	.principles_row:nth-child(odd) .principles_row_block,
+	.principles_row:nth-child(even) .principles_row_block {
+		float: right;
+	}
+	.principles_row:nth-child(odd) .principles_row_description,
+	.principles_row:nth-child(even) .principles_row_description
+	 {
+		float: left;
+	}
+	.principles_row_img {
+		width: 100%;
+		height: 100%;
+		background: url('../img/perfection.jpg') no-repeat center center;
+		background-size: cover;
+		transition: .4s;
+	}
+	.principles_row_description {
+		padding: 30px 50px;
+	}
+	.toggle {
+		display: block;
+	}
+	#menu {
+		position: absolute;
+		top: -455px;
+		z-index: 10;
+		width: 100%;
+		transition: .4s;
+		background: #fff;
+		padding: 30px;
+		padding-top: 50px;
+	}
+	#menu li {
+		display: block;
+		padding: 0;
+		margin: 5px;
+	}
+	nav li a {
+		color: #919294;
+		padding: 10px;
+		display: block;
+		transition: .4s;
+		outline: 1px solid transparent;
+	}
+	nav li a:hover,
+	nav li a:focus,
+	nav li a:active,
+	nav li:nth-child(1) a:hover,
+	nav li:nth-child(1) a:focus {
+		color: #fff;
+		background: #00BC8B;
+		padding: 20px;
+		display: block;
+	}
+	nav li:nth-child(1) a{
+		color: #00BC8B;
+		border-bottom: none;
+	}
+}
+@media screen and (max-width: 879px) and (orientation: landscape) {
+	.header_content {
+		padding-top: 12%;
+	}
+	.header_content h1 {
+		margin-bottom: 50px;
+	}
+}
+@media screen and (max-width: 639px) {
+	.header_content {
+		padding-top: 50%;
+	}
+	.header_content h4 {
+		display: none;
+	}
+	.header_content h1 {
+		margin-bottom: 50px;
+	}
+}
+@media screen and (max-width: 639px) and (orientation: landscape) {
+	.header_content {
+		padding-top: 20%;
+	}
 }
