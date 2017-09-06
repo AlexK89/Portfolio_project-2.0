@@ -3,20 +3,25 @@
 <head>
 	<title>Vasile Cojusco | Software engineer</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/about.css">
 </head>
 <body>
 	<nav>
-		<!-- <div class="logo">
-			<p><img src="img/logo.png">VC</p>
-		</div> -->
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="portfolio.html">Portfolio</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
+		<div class="container hover">
+			<!-- <div class="logo">
+				<a href="index.html"><img src="img/logo.png"></a>
+				<a href="index.html">Vasile Cojusco</a>
+			</div> -->
+			<div class="toggle"><a href="#" class="toggle_ancher" onclick="toggle_menu()"><i class="fa fa-bars fa-3x" aria-hidden="true"></i></a></div>
+			<ul id="menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
 	</nav>
 	<section class="header">
 		<div class="header_background"></div>
@@ -106,5 +111,17 @@
 	<footer>
 		<p>&copy; Copyright by Vasile Cojusco.</p>
 	</footer>
+	    <script type="text/javascript">
+	        function toggle_menu() {
+				if(document.getElementById("menu").style.top == "0px") {
+					document.getElementById("menu").style.top = "-455px";
+					document.getElementsByClassName("toggle_ancher")[0].style.color = "#fff";
+				} 
+				else {
+					document.getElementById("menu").style.top = "0";
+					document.getElementsByClassName("toggle_ancher")[0].style.color = "#919294";
+				}
+	        }
+	    </script>
 </body>
 </html>

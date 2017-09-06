@@ -200,7 +200,8 @@ nav ul a:focus{
  {
 	width: 50%;
 	float: left;
-	min-height: 700px;
+	position: absolute;
+	height: 100%;
 }
 .principles_row_block img {
 	position: absolute;

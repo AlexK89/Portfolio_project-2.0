@@ -2,18 +2,21 @@
 <html>
 <head>
 	<title>Vasile Cojusco | Software engineer</title>
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 	<nav>
-		<div class="container">
+		<div class="container hover">
 			<!-- <div class="logo">
 				<a href="index.html"><img src="img/logo.png"></a>
 				<a href="index.html">Vasile Cojusco</a>
 			</div> -->
-			<ul>
+			<div class="toggle"><a href="#" class="toggle_ancher" onclick="toggle_menu()"><i class="fa fa-bars fa-3x" aria-hidden="true"></i></a></div>
+			<ul id="menu">
 				<li><a href="#">Home</a></li>
 				<li><a href="about.html">About</a></li>
 				<li><a href="portfolio.html">Portfolio</a></li>
@@ -58,6 +61,10 @@
 	<section class="principles">
 		<div class="container">
 			<div class="principles_row">
+				<div class="principles_row_block">
+					<div class="principles_row_img inline_block">
+					</div>
+				</div>
 				<div class="principles_row_description inline_block">
 					<h4>Thing #1</h4>
 					<h2>Targeting on perfection</h2>
@@ -65,13 +72,13 @@
 						some ipsum text, some ipsum text, some ipsum text, some ipsum text, some ipsum text, some ipsum text, some ipsum text, some ipsum text, some ipsum text, some ipsum text, some ipsum text, some ipsum text
 					</p>
 				</div>
+				
+			</div>
+			<div class="principles_row">
 				<div class="principles_row_block">
 					<div class="principles_row_img inline_block">
 					</div>
 				</div>
-			</div>
-			<div class="principles_row">
-				
 				<div class="principles_row_description">
 					<h4>Thing #2</h4>
 					<h2>Deadlines metters</h2>
@@ -79,10 +86,7 @@
 						some ipsum text, some ipsum text, some ipsum text, some ipsum text, some ipsum text, some ipsum text, some ipsum text, some ipsum text, some ipsum text, some ipsum text, some ipsum text, some ipsum text
 					</p>
 				</div>
-				<div class="principles_row_block">
-					<div class="principles_row_img inline_block">
-					</div>
-				</div>
+				
 			</div>
 		</div>
 	</section>
@@ -115,7 +119,7 @@
 					Cooperating with me, you defenately get ...
 				</p>
 			</header>
-			<body>
+			<div class="body">
 				<div class="satisfaction_type">
 					<p><img src="./img/calendar.png"></p>
 					<h4>Timing</h4>
@@ -131,7 +135,7 @@
 					<h4>Enjoy your business</h4>
 					<p>Get your order with no extra worries and save you time.</p>
 				</div>
-			</body>
+			</div>
 		</div>
 	</section>
 	<section class="call_to_action">
@@ -142,5 +146,32 @@
 	<footer>
 		<p>&copy; Copyright by Vasile Cojusco.</p>
 	</footer>
+	
+	
+	<script src="./js/jquery-3.2.1.min.js" charset="utf-8"></script>
+	    <script type="text/javascript">
+	        function toggle_menu() {
+				if(document.getElementById("menu").style.top == "0px") {
+					document.getElementById("menu").style.top = "-455px";
+					document.getElementsByClassName("toggle_ancher")[0].style.color = "#fff";
+				} 
+				else {
+					document.getElementById("menu").style.top = "0";
+					document.getElementsByClassName("toggle_ancher")[0].style.color = "#919294";
+				}
+	        }
+			$('a[href^="#"]').on('click',function (e) {
+				    e.preventDefault();
+
+				    var target = this.hash;
+				    var $target = $(target);
+
+				    $('html, body').stop().animate({
+				        'scrollTop': $target.offset().top
+				    }, 900, 'swing', function () {
+				        window.location.hash = target;
+				    });
+				});
+	    </script>
 </body>
 </html>

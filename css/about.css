@@ -65,6 +65,16 @@ p {
 }
 
 /*header section*/
+.toggle {
+	display: none;
+	position: absolute;
+	z-index: 20;
+	top: 25px;
+	right: 40px;
+}
+.toggle a {
+	color: #fff;
+}
 nav {
 	width: 100%;
 	height: 90px;
@@ -72,7 +82,8 @@ nav {
 	top: 0;
 	z-index: 10;
 	background: #000;
-	background: -webkit-linear-gradient(rgba(0,0,0,.8), 				rgba(0,0,0,0));
+	background: -webkit-linear-gradient(rgba(0,0,0,.8),
+				rgba(0,0,0,0));
 	background: -o-linear-gradient(rgba(0,0,0,.8),
 				rgba(0,0,0,0));
 	background: -moz-linear-gradient(rgba(0,0,0,.8),
@@ -80,9 +91,6 @@ nav {
 	background: linear-gradient(rgba(0,0,0,.8),
 				rgba(0,0,0,0));
 }
-/*nav .container {
-	background-color: rgba(0,0,0,0);
-}*/
 .logo {
 	position: absolute;
 	z-index: 2;
@@ -113,6 +121,7 @@ nav {
 }
 nav ul {
 	margin: 0px;
+	padding: 0;
 	text-align: center;
 }
 nav li {
@@ -166,7 +175,9 @@ nav ul a:focus{
 .header_content h1 {
 	margin-bottom: 70px;
 }
-
+.header_content p {
+	line-height: 2.7rem;
+}
 /*promissess_section*/
 
 .promissess {
@@ -237,8 +248,8 @@ nav ul a:focus{
 	right: 150px;
 }
 .principles_row_block img:nth-child(3) {
-	top: 100px;
-	right: 300px;
+	top: 150px;
+	right: 200px;
 }
 .principles_row_block img:hover {
 	z-index: 10;
@@ -288,4 +299,128 @@ footer {
 	text-align: center;
 	letter-spacing: 1px;
 	font-weight: 100;
+}
+
+
+/*Mediaqueries*/
+
+@media screen and (max-width: 1132px) {
+	h1 {
+		font-size: 4rem;
+	}
+	h2 {
+		font-size: 3rem;
+	}
+	h4 {
+		font-size: 1.6rem;
+		font-style: italic;
+	}
+	p {
+		font-size: 1.6rem;
+	}
+	.header_content {
+		padding-top: 40%;
+	}
+	.header_text {
+		text-align: left;
+		padding: 0 20px;
+	}
+	.header_items {
+		width: 100%;
+		justify-content: space-around;
+	}
+	.container {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 1132px) and (orientation: landscape) {
+	.header_content {
+		padding-top: 15%;
+	}
+}
+@media screen and (max-width: 879px) {
+	h1 {
+		font-size: 3rem;
+	}
+	h2 {
+		font-size: 2.1rem;
+	}
+	.header_items {
+		display: none;
+	}
+	.header_content {
+		padding-top: 30%;
+	}
+	.info {
+		padding: 150px 20px;
+	}
+	.principles {
+		display: none;
+	}
+	.promissess header {
+		padding: 0 30px;
+	}
+	.toggle {
+		display: block;
+	}
+	#menu {
+		position: absolute;
+		top: -455px;
+		z-index: 10;
+		width: 100%;
+		transition: .4s;
+		background: #fff;
+		padding: 30px;
+		padding-top: 120px;
+	}
+	#menu li {
+		display: block;
+		padding: 0;
+		margin: 5px;
+	}
+	nav li a {
+		color: #919294;
+		padding: 20px;
+		display: block;
+		transition: .4s;
+		outline: 1px solid transparent;
+	}
+	nav li a:hover,
+	nav li a:focus,
+	nav li a:active,
+	nav li:nth-child(2) a:hover,
+	nav li:nth-child(2) a:focus {
+		color: #fff;
+		background: #00BC8B;
+		padding: 20px;
+		display: block;
+	}
+	nav li:nth-child(2) a{
+		color: #00BC8B;
+		border-bottom: none;
+	}
+}
+@media screen and (max-width: 879px) and (orientation: landscape) {
+	.header_content {
+		padding-top: 12%;
+	}
+	.header_content h1 {
+		margin-bottom: 20px;
+	}
+}
+@media screen and (max-width: 639px) {
+	.header_content {
+		padding-top: 50%;
+	}
+	.header_content h4 {
+		display: none;
+	}
+	.header_content h1 {
+		margin-bottom: 20px;
+	}
+}
+@media screen and (max-width: 639px) and (orientation: landscape) {
+	.header_content {
+		padding-top: 20%;
+	}
 }
