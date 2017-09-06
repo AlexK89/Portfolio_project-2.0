@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vasile Cojusco | Software engineer</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+	<nav>
+		<!-- <div class="logo">
+			<p>VC</p>
+		</div> -->
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="portfolio.html">Portfolio</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+	<section class="header">
+		<div class="header_background"></div>
+		<div class="container header_content">
+			<h3>What to Chat?</h3>
+			<h1>Write me an email directly from here</h1>
+			<a class="button" href="#info_scroll">Send an email</a>
+		</div>
+	</section>
+	<section class="principles">
+			<div class="principles_row">
+				<div class="principles_row_block">
+					<div id="map"></div>
+				</div>
+				<div class="container">
+					<div class="principles_row_description inline_block">
+						<h2>Contacts</h2>
+						<p>
+							I really interested in valuable and interesting propousals.
+						</p>
+						<h4>Bristol</h4>
+						<p>E14AN, Some st. 1</p>
+						<p><a href="mailto:rendom@gmail.com">mailto:rendom@gmail.com</a></p>
+					</div>
+				</div>
+				
+			</div>
+	</section>
+	<footer>
+		<p>&copy; Copyright by Vasile Cojusco.</p>
+	</footer>
+    <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCF1dO18seKvxTWzKxohk1UQxrqG_4TUwE&callback=initMap">
+    </script>
+</body>
+</html>
