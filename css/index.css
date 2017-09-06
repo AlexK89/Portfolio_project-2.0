@@ -170,7 +170,7 @@ nav ul a:focus{
 }
 .header_content {
 	color: #fff;
-	padding-top: 185px;
+	padding-top: 250px;
 	height: 100vh;
 }
 .header_content h1 {
@@ -189,16 +189,16 @@ nav ul a:focus{
 	margin-top: 20px;
 	line-height: 3rem;
 	transition: .4s;
-    background: -webkit-linear-gradient(rgba(0,188,139,.4), rgba(255,255,255, 0)); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(rgba(0,188,139,.4), rgba(255,255,255, 0)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(rgba(0,188,139,.4), rgba(255,255,255, 0)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(rgba(0,188,139,.4), rgba(255,255,255, 0)); /* Standard syntax */
+    background: -webkit-linear-gradient(rgba(0,188,139,.6), rgba(255,255,255, 0)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(rgba(0,188,139,.6), rgba(255,255,255, 0)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(0,188,139,.6), rgba(255,255,255, 0)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(0,188,139,.6), rgba(255,255,255, 0)); /* Standard syntax */
 }
 .header_iam:nth-child(even) {
-    background: -webkit-linear-gradient(rgba(255,255,255, .3), rgba(0,188,139,0)); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(rgba(255,255,255, .3), rgba(0,188,139,0)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(rgba(255,255,255, .3), rgba(0,188,139,0)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(rgba(255,255,255, .3), rgba(0,188,139,0)); /* Standard syntax */
+    background: -webkit-linear-gradient(rgba(255,255,255, .6), rgba(0,188,139,0)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(rgba(255,255,255, .6), rgba(0,188,139,0)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(255,255,255, .6), rgba(0,188,139,0)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(255,255,255, .6), rgba(0,188,139,0)); /* Standard syntax */
 }
 .header_iam:hover {
 	margin-top: 0px;

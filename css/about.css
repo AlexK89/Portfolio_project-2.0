@@ -169,14 +169,15 @@ nav ul a:focus{
 }
 .header_content {
 	color: #fff;
-	padding-top: 15%;
+	padding-top: 250px;
 }
 
 .header_content h1 {
 	margin-bottom: 70px;
 }
 .header_content p {
-	line-height: 2.7rem;
+	font-size: 2rem;
+	line-height: 3.3rem;
 }
 /*promissess_section*/
 
@@ -318,8 +319,13 @@ footer {
 	p {
 		font-size: 1.6rem;
 	}
+	.header {
+		height: auto;
+		min-height: 100vh;
+		padding-bottom: 30px;
+	}
 	.header_content {
-		padding-top: 40%;
+		padding-top: 300px;
 	}
 	.header_text {
 		text-align: left;
@@ -335,7 +341,7 @@ footer {
 }
 @media screen and (max-width: 1132px) and (orientation: landscape) {
 	.header_content {
-		padding-top: 15%;
+		padding-top: 150px;
 	}
 }
 @media screen and (max-width: 879px) {
@@ -349,7 +355,7 @@ footer {
 		display: none;
 	}
 	.header_content {
-		padding-top: 30%;
+		padding-top: 200px;
 	}
 	.info {
 		padding: 150px 20px;
@@ -399,18 +405,23 @@ footer {
 		color: #00BC8B;
 		border-bottom: none;
 	}
+	.header_content p {
+		font-size: 1.8rem;
+		line-height: 2.8rem;
+	}
 }
 @media screen and (max-width: 879px) and (orientation: landscape) {
 	.header_content {
-		padding-top: 12%;
+		padding-top: 150px;
 	}
 	.header_content h1 {
 		margin-bottom: 20px;
+		padding-bottom: 190px;
 	}
 }
 @media screen and (max-width: 639px) {
 	.header_content {
-		padding-top: 50%;
+		padding-top: 70px;
 	}
 	.header_content h4 {
 		display: none;
@@ -421,6 +432,6 @@ footer {
 }
 @media screen and (max-width: 639px) and (orientation: landscape) {
 	.header_content {
-		padding-top: 20%;
+		padding-top: 100px;
 	}
 }
