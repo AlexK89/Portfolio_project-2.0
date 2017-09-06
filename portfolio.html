@@ -15,7 +15,7 @@
 				<a href="index.html"><img src="img/logo.png"></a>
 				<a href="index.html">Vasile Cojusco</a>
 			</div> -->
-			<div class="toggle"><a href="#" class="toggle_ancher" onclick="toggle_menu()"><i class="fa fa-bars fa-3x" aria-hidden="true"></i></a></div>
+			<div class="toggle"><a class="toggle_ancher" onclick="toggle_menu()"><i class="fa fa-bars fa-3x" aria-hidden="true"></i></a></div>
 			<ul id="menu">
 				<li><a href="index.html">Home</a></li>
 				<li><a href="about.html">About</a></li>
@@ -134,6 +134,10 @@
 				document.getElementsByClassName("toggle_ancher")[0].style.color = "#919294";
 			}
 	    }
+		document.addEventListener('touchend', function(event) {
+				document.getElementById("menu").style.top = "-455px";
+				document.getElementsByClassName("toggle_ancher")[0].style.color = "#fff"; 
+		}, false);
 	</script>
 </body>
 </html>
