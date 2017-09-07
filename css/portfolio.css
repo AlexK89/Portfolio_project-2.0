@@ -373,7 +373,7 @@ footer {
 	}
 	nav li a {
 		color: #919294;
-		padding: 10px;
+		padding: 20px;
 		display: block;
 		transition: .4s;
 		outline: 1px solid transparent;
@@ -381,8 +381,8 @@ footer {
 	nav li a:hover,
 	nav li a:focus,
 	nav li a:active,
-	nav li:nth-child(1) a:hover,
-	nav li:nth-child(1) a:focus {
+	nav li:nth-child(3) a:hover,
+	nav li:nth-child(3) a:focus {
 		color: #fff;
 		background: #00BC8B;
 		padding: 20px;
