@@ -603,3 +603,9 @@ footer {
 		padding-top: 20%;
 	}
 }
+@media screen\9 {
+	.statistics,
+	.header {
+		width: 100%;
+	}
+}
