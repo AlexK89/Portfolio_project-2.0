@@ -27,13 +27,16 @@ body{
 }
 h1 {
 	font-size: 5rem;
+	cursor: default;
 }
 h2 {
 	font-size: 4rem;
+	cursor: default;
 }
 h4 {
 	font-size: 2rem;
 	font-style: italic;
+	cursor: default;
 }
 p {
 	font-size: 1.8rem;
@@ -410,7 +413,7 @@ nav ul a:focus{
 .call_to_action .button:focus,
 .call_to_action .button:active,
 .call_to_action .button:focus {
-	background-color: rgba(255,255,255,.4);;
+	background-color: rgba(255,255,255,.4);
 }
 /*fotter_section*/
 footer {

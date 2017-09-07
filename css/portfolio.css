@@ -27,13 +27,16 @@ body{
 }
 h1 {
 	font-size: 5rem;
+	cursor: default;
 }
 h2 {
 	font-size: 4rem;
+	cursor: default;
 }
 h4 {
 	font-size: 2rem;
 	font-style: italic;
+	cursor: default;
 }
 p {
 	font-size: 1.8rem;
@@ -186,6 +189,7 @@ nav ul a:focus{
 }
 
 .principles_row_block {
+	position: relative;
 	overflow: hidden;
 	transition: .4s;
 }
@@ -209,10 +213,44 @@ nav ul a:focus{
 	height: 100%;
 	background: url('../img/perfection.jpg') no-repeat center center;
 	background-size: cover;
-	transition: .4s;
+	transition: .9s;
+	transition-delay: 0.3s;
 }
+.principles_row_link {
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 5;
+	top: 0;
+	left: 0;
+	transition: all .7s ease-in-out;
+	background: rgba(0,188,139,0);
+}
+.principles_row_block:hover .principles_row_link,
+.principles_row_link:hover .principles_row_link {
+	opacity: 1;
+	background: rgba(0,188,139,.8);
+}
+.principles_row_link a {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	margin-top: -35px;
+	margin-left: -90px;
+	border-color: #fff;
+	color: #fff;
+}
+.principles_row_link a:active,
+.principles_row_link a:hover,
+.principles_row_link a:focus {
+	background-color: rgba(255,255,255,.4);
+} 
 .principles_row_block:hover .principles_row_img {
-	transform: scale(1.1);
+	transform: scale(1.2) rotate(3deg);
+}
+.principles .principles_row:nth-child(even) .principles_row_block:hover .principles_row_img {
+	transform: scale(1.2) rotate(-3deg);
 }
 .principles_row:nth-child(even) .principles_row_img {
 	background: url('../img/time.jpg') no-repeat center center;
@@ -227,7 +265,6 @@ nav ul a:focus{
 .principles_row_description p {
 	color: #919294;
 }
-
 /*call_to_action_ssection*/
 .call_to_action {
 	padding: 70px 0;
