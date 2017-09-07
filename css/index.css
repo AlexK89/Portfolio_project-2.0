@@ -154,6 +154,7 @@ nav ul a:focus{
 .header {
 	position: relative;
 	overflow: hidden;
+	width: 100%;
 	width: 100vw;
 	height: 100vh;
 }
@@ -161,6 +162,7 @@ nav ul a:focus{
 	position: absolute;
 	z-index: -10;
 	top: 0;
+	width: 100%;
 	width: 100vw;
 	height: 120vh;
 	background: url(../img/laptop-2588074_1920.jpg) no-repeat center center;
@@ -284,6 +286,7 @@ nav ul a:focus{
 	position: relative;
 	color: #fff;
 	overflow: hidden;
+	width: 100%;
 	width: 100vw;
 }
 .statistics_background {
