@@ -154,6 +154,7 @@ nav ul a:focus{
 .header {
 	position: relative;
 	overflow: hidden;
+	width: 100%;
 	width: 100vw;
 	height: 100vh;
 }
@@ -161,6 +162,7 @@ nav ul a:focus{
 	position: absolute;
 	z-index: -10;
 	top: 0;
+	width: 100%;
 	width: 100vw;
 	height: 120vh;
 	background: url(../img/laptop-2588074_1920.jpg) no-repeat center center;
@@ -284,6 +286,7 @@ nav ul a:focus{
 	position: relative;
 	color: #fff;
 	overflow: hidden;
+	width: 100%;
 	width: 100vw;
 }
 .statistics_background {
@@ -603,9 +606,12 @@ footer {
 		padding-top: 20%;
 	}
 }
+<<<<<<< HEAD
 @media screen\9 {
 	.statistics,
 	.header {
 		width: 100%;
 	}
 }
+=======
+>>>>>>> f9d35d7530fd3638be4a2e248080146e3f0deb3d
