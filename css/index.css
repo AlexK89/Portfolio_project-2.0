@@ -424,7 +424,7 @@ footer {
 
 /*Mediaqueries*/
 
-@media screen and (max-width: 1432px) {
+@media screen and (max-width: 1132px) {
 	h1 {
 		font-size: 4rem;
 	}
@@ -601,5 +601,10 @@ footer {
 @media screen and (max-width: 639px) and (orientation: landscape) {
 	.header_content {
 		padding-top: 20%;
+	}
+}
+@media screen and (max-height: 900px) and (orientation: portrait) {
+	.header_content {
+		padding-top: 100px;
 	}
 }
