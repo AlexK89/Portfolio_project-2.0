@@ -266,7 +266,7 @@ footer {
 
 /*Mediaqueries*/
 
-@media screen and (max-width: 1132px) {
+@media screen and (max-width: 1432px) {
 	h1 {
 		font-size: 4rem;
 	}
