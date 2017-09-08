@@ -179,6 +179,7 @@ nav ul a:focus{
 /*principles_section*/
 .principles {
 	background-color: #fff;
+	padding-bottom: 30px;
 	overflow: auto;
 }
 .principles_row {
