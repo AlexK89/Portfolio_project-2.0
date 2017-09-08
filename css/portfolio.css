@@ -52,7 +52,6 @@ p {
 	transition: .4s;
 	text-decoration: none;
 }
-
 .button:hover,
 .button:active,
 .button:focus,
@@ -173,7 +172,6 @@ nav ul a:focus{
 	color: #fff;
 	padding: 350px 70px 0;
 }
-
 .header_content h1 {
 	margin-bottom: 70px;
 }
@@ -187,7 +185,6 @@ nav ul a:focus{
 	height: 500px;
 	overflow: hidden;
 }
-
 .principles_row_block {
 	position: relative;
 	overflow: hidden;
@@ -265,6 +262,7 @@ nav ul a:focus{
 .principles_row_description p {
 	color: #919294;
 }
+
 /*call_to_action_ssection*/
 .call_to_action {
 	padding: 70px 0;
@@ -291,6 +289,7 @@ nav ul a:focus{
 .call_to_action .button:focus {
 	background-color: rgba(255,255,255,.4);;
 }
+
 /*fotter_section*/
 footer {
 	background: #fff;
@@ -302,7 +301,6 @@ footer {
 }
 
 /*Mediaqueries*/
-
 @media screen and (max-width: 1132px) {
 	h1 {
 		font-size: 4rem;

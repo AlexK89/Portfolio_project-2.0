@@ -53,7 +53,6 @@ p {
 	transition: .4s;
 	text-decoration: none;
 }
-
 .button:hover,
 .button:active,
 .button:focus,
@@ -156,7 +155,6 @@ nav ul a:focus{
 	border-bottom: 1px solid #00BC8B;
 }
 
-
 /*Header*/
 .header {
 	position: relative;
@@ -247,6 +245,7 @@ nav ul a:focus{
 .principles_row_description a:hover {
 	color: #00EDAE;
 }
+
 /*fotter_section*/
 footer {
 	background: #000;
@@ -258,7 +257,6 @@ footer {
 }
 
 /*Mediaqueries*/
-
 @media screen and (max-width: 1132px) {
 	h1 {
 		font-size: 4rem;

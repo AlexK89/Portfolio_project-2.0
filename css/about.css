@@ -237,24 +237,53 @@ nav ul a:focus{
 	float: left;
 	min-height: 600px;
 }
-.principles_row_block img {
+.principles_row_block i {
 	position: absolute;
-	width: 40%;
+	font-size: 8rem;
 	transition: .4s;
 }
-.principles_row_block img:nth-child(1) {
+.devicon-javascript-plain {
 	top: 140px;
-	right: 40px;
-}
-.principles_row_block img:nth-child(2) {
-	top: 60px;
 	right: 150px;
 }
-.principles_row_block img:nth-child(3) {
-	top: 150px;
-	right: 200px;
+.devicon-html5-plain {
+	top: 40px;
+	right: 160px;
 }
-.principles_row_block img:hover {
+.devicon-php-plain.colored {
+	top: 220px;
+	right: 190px;
+	font-size: 10rem;
+}
+.devicon-bootstrap-plain {
+	top: 100px;
+	right: 260px;
+}
+.devicon-mysql-plain-wordmark {
+	top: 300px;
+	right: 160px;
+}
+.devicon-wordpress-plain {
+	top: 200px;
+	right: 320px;
+}
+.devicon-c-plain {
+	top: 300px;
+	right: 280px;
+}
+.devicon-git-plain {
+	top: 260px;
+	right: 70px;
+}
+.devicon-css3-plain {
+	top: 60px;
+	right: 40px;
+}
+.devicon-photoshop-plain {
+	top: 160px;
+	right: 20px;
+}
+.principles_row_block i:hover {
 	z-index: 10;
 	transform: scale(1.3);
 }
